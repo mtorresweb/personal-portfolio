@@ -21,7 +21,7 @@ const Footer = () => {
         await navigator.clipboard.writeText("+57 3106058963");
         setCopiedTel(true);
       } else {
-        await navigator.clipboard.writeText("hello@micael.com");
+        await navigator.clipboard.writeText("hello@mtorresweb.me");
         setCopiedEmail(true);
       }
     } catch (err) {

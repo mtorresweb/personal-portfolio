@@ -1,0 +1,15 @@
+@import "../../sass/utilities/variables.scss";
+
+.app__simpleNavBar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba($dark-gray, 0.7);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-bottom: 1px solid $grey;
+  position: fixed;
+  z-index: 2;
+}

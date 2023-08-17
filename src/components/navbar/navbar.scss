@@ -1,0 +1,164 @@
+@import "../../sass/utilities/variables.scss";
+
+.app__navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba($dark-gray, 0.7);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-bottom: 0.5px solid $grey;
+  position: fixed;
+  z-index: 2;
+}
+
+.app__navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: $blue;
+  font-weight: bold;
+  font-size: 1.5rem;
+  user-select: none;
+  cursor: pointer;
+
+  @media screen and (max-width: 340px) {
+    font-size: 1rem;
+  }
+}
+
+.app__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+
+  li {
+    margin: 0 1rem;
+    cursor: pointer;
+    flex-direction: column;
+
+    &:hover {
+      div {
+        background-color: $blue;
+      }
+    }
+
+    div {
+      width: 5px;
+      height: 5px;
+      background-color: transparent;
+      border-radius: 50%;
+      margin-bottom: 5px;
+    }
+
+    a {
+      color: $primary;
+      text-decoration: none;
+      flex-direction: column;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
+
+.app__navbar-menu {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $grey;
+
+  svg {
+    width: 70%;
+    height: 70%;
+    color: $primary;
+  }
+
+  div {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    padding: 1rem;
+    width: 80%;
+    height: 100vh;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    /* background: url("../../assets/bgWhite.png");
+    background-color: $grey;
+    background-size: cover;
+    background-repeat: repeat; */
+
+    background-color: rgba($dark-gray, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    svg {
+      width: 35px;
+      height: 35px;
+      color: $primary;
+      margin: 0.5rem 1rem;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+
+      li {
+        margin: 1rem;
+
+        a {
+          color: $primary;
+          text-decoration: none;
+          font-size: 1rem;
+          font-weight: 600;
+          text-transform: uppercase;
+
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+}

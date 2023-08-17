@@ -1,0 +1,169 @@
+@import "../utilities/variables.scss";
+
+#contact {
+  .app__wrapper {
+    .copyright {
+      display: none;
+    }
+  }
+}
+
+.app__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 6rem;
+}
+
+#contact-title {
+  color: $primary;
+}
+
+.app__footer-cards {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 4em 2rem 2rem;
+
+  .app__footer-card {
+    width: 290px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+
+    margin: 1rem 0;
+    padding: 16px 10px;
+    border-radius: 10px;
+    background-color: #d6daf8;
+
+    transition: all 0.3s ease-in-out;
+
+    .copy-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #000;
+      background-color: $light;
+      border: 1px solid $bg;
+      padding: 5px 10px;
+      border-radius: 5px;
+      height: 30px;
+      width: 50px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $grey;
+        color: #fff;
+      }
+
+      svg {
+        width: 100%;
+      }
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
+    p {
+      font-weight: 500;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #000;
+    }
+
+    &:hover {
+      box-shadow: 0 0 10px $light;
+    }
+
+    @media screen and (max-width: 450px) {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.app__footer-cards .app__footer-card:last-child {
+  background-color: #f2f7fb;
+}
+
+.app__footer-cards .app__footer-card:last-child:hover {
+  box-shadow: 0 0 10px #f2f7fb;
+}
+
+.app__footer-form {
+  width: 60%;
+  flex-direction: column;
+  margin: 1rem 2rem;
+
+  div {
+    width: 100%;
+
+    margin: 0.75rem 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: $primary;
+
+    transition: all 0.3s ease-in-out;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.95rem;
+      border: none;
+      border-radius: 7px;
+      background-color: $primary;
+
+      color: #000;
+      font-weight: 500;
+      font-size: 15px;
+      outline: none;
+    }
+
+    textarea {
+      height: 170px;
+    }
+  }
+
+  button {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: $blue;
+
+    font-weight: 500;
+    color: $light;
+    outline: none;
+    margin: 2rem 0 0 0;
+
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #6718c2;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+#thank-you {
+  color: $blue;
+}

@@ -55,12 +55,12 @@ function About() {
             About me
           </h2>
           <p id="about-text" className="p-text">
-            I am a passionate and dedicated Full Stack junior developer with
+            I am a passionate and dedicated Full Stack developer with
             proficiency in building robust and scalable web applications. My
-            skill set includes proficiency in JavaScript, Node.js, Express, SQL,
-            and MongoDB for developing powerful backend systems. On the
-            frontend, I utilize the power of JavaScript and React to create
-            engaging and intuitive user interfaces.
+            skill set includes proficiency in JavaScript, Node.js, Express,
+            PostgreSQL, MySQL and MongoDB for developing powerful backend
+            systems. On the frontend, I utilize the power of JavaScript and
+            React to create engaging and intuitive user interfaces.
           </p>
         </div>
         <div className="links">

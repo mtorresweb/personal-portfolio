@@ -1,4 +1,4 @@
-# portfolio
+# Personal Portfolio
 Stunning personal portfolio built with React, Sass and Framer Motion.
 
 [![portfolio](https://res.cloudinary.com/dojhj2erh/image/upload/v1692239508/portfolio/largePortfolio_h5ib6a.png "portfolio")](https://res.cloudinary.com/dojhj2erh/image/upload/v1692239508/portfolio/largePortfolio_h5ib6a.png "portfolio")
@@ -20,4 +20,3 @@ Welcome to my awesome personal portfolio project built using React, Sass, react-
 - **Sass:** A popular CSS preprocessor for writing more maintainable and structured styles.
 - **react-markdown:** Render Markdown content as React components.
 - **Framer Motion:** Create animations and interactive UI components with ease.
-# personal-portfolio

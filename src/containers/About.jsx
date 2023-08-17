@@ -4,11 +4,16 @@ import AppWrap from "../wrapper/AppWrap.jsx";
 import { BsGithub } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 function About() {
   return (
     <div className="app__about-container">
-      <div className="left">
+      <motion.div
+        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className="left"
+      >
         <div className="cube-loader">
           <div className="cube-top">
             <span className="text">
@@ -38,9 +43,13 @@ function About() {
             </span>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="right">
+      <motion.div
+        whileInView={{ x: [100, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className="right"
+      >
         <div className="text">
           <h2 id="about-title" className="head-text">
             About me
@@ -80,7 +89,7 @@ function About() {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -52,11 +52,20 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text" id="contact-title">
+      <motion.h2
+        whileInView={{ y: [20, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className="head-text"
+        id="contact-title"
+      >
         Chat with me
-      </h2>
+      </motion.h2>
 
-      <div className="app__footer-cards">
+      <motion.div
+        whileInView={{ y: [20, 0], opacity: [0, 1] }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className="app__footer-cards"
+      >
         <div className="app__footer-card">
           <img src={images.email} alt="email" />
           <a href="mailto:hello@mtorresweb.me" className="p-text">
@@ -127,9 +136,11 @@ const Footer = () => {
             </motion.button>
           )}
         </div>
-      </div>
+      </motion.div>
       {!isFormSubmitted ? (
-        <form
+        <motion.form
+          whileInView={{ y: [20, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.5, delay: 0.1 }}
           ref={form}
           onSubmit={handleSubmit}
           className="app__footer-form app__flex"
@@ -163,7 +174,7 @@ const Footer = () => {
           <button type="submit" className="p-text">
             {!loading ? "Send Message" : "Sending..."}
           </button>
-        </form>
+        </motion.form>
       ) : (
         <div>
           <h3 id="thank-you" className="head-text">

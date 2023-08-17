@@ -38,14 +38,12 @@ const certificates = [
 
 const Certificates = () => {
   return (
-    <div className="app__certificates">
-      <motion.h2
-        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-        className="head-text"
-      >
-        Certificates
-      </motion.h2>
+    <motion.div
+      whileInView={{ y: [20, 0], opacity: [0, 1] }}
+      transition={{ duration: 0.5, delay: 0.1 }}
+      className="app__certificates"
+    >
+      <h2 className="head-text">Certificates</h2>
 
       <div className="app__profiles">
         {certificates.map((certificate, index) => (
@@ -68,7 +66,7 @@ const Certificates = () => {
           </motion.a>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

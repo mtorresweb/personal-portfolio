@@ -6,7 +6,7 @@ export default [
     title: "My Portfolio",
     description: "Portfolio web page",
     projectLink: "https://mtorresweb.me",
-    codeLink: "https://github.com/mtorresweb/portfolio",
+    codeLink: "https://github.com/mtorresweb/personal-portfolio",
     img: images.portfolio,
     largeImg: images.largePortfolio,
     tags: ["Frontend", "All"],

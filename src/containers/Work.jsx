@@ -29,14 +29,14 @@ const Work = () => {
   };
 
   return (
-    <div className="app__works">
-      <motion.h2
-        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-        className="head-text"
-      >
+    <motion.div
+      whileInView={{ y: [20, 0], opacity: [0, 1] }}
+      transition={{ duration: 0.5, delay: 0.1 }}
+      className="app__works"
+    >
+      <h2 className="head-text">
         My <span>Projects</span>
-      </motion.h2>
+      </h2>
       <div className="app__work-filter">
         {sections.map((item, index) => (
           <div
@@ -110,7 +110,7 @@ const Work = () => {
           </div>
         ))}
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 

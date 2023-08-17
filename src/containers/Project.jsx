@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { AppState } from "../context/AppContext.jsx";
-import SimpleNavBar from "../components/simpleNavbar/SimpleNavBar.jsx";
+import SimpleNavBar from "../components/simpleNavBar/SimpleNavBar.jsx";
 import { BsGithub } from "react-icons/bs";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";

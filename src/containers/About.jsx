@@ -10,7 +10,7 @@ function About() {
   return (
     <div className="app__about-container">
       <motion.div
-        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+        whileInView={{ y: [20, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5, delay: 0.1 }}
         className="left"
       >
@@ -46,7 +46,7 @@ function About() {
       </motion.div>
 
       <motion.div
-        whileInView={{ x: [100, 0], opacity: [0, 1] }}
+        whileInView={{ y: [20, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5, delay: 0.1 }}
         className="right"
       >

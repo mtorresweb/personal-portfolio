@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className="app__header">
       <motion.div
-        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+        whileInView={{ y: [20, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5, delay: 0.1 }}
         className="app__header-info"
       >
@@ -33,7 +33,7 @@ const Header = () => {
         className="app__header-msg"
       >
         <motion.div
-          whileInView={{ x: [100, 0], opacity: [0, 1] }}
+          whileInView={{ y: [20, 0], opacity: [0, 1] }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <p className="head-text text">Have a look</p>

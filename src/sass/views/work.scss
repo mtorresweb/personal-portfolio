@@ -33,7 +33,7 @@
     border-radius: 0.5rem;
     background-color: $light;
     color: #000;
-    font-weight: 800;
+    font-weight: 500;
 
     cursor: pointer;
     transition: all 0.3s ease;
@@ -153,10 +153,16 @@
   h4 {
     margin-top: 1rem;
     line-height: 1.5;
+    color: $bg;
+    font-weight: 400;
 
     @media screen and (min-width: 2000px) {
       margin-top: 3rem;
     }
+  }
+
+  p {
+    color: $grey;
   }
 
   .app__work-tag {

@@ -6,7 +6,7 @@
 
   .project-content {
     max-width: 1225px;
-    padding: 20px 0px;
+    padding: 20px 20px;
     display: flex;
     width: 80%;
     flex-direction: column;
@@ -17,10 +17,10 @@
     border-radius: 20px;
 
     img {
-      width: calc(100% - 64px);
-      object-fit: contain;
+      max-width: 100%;
       border-radius: 10px;
-      max-height: 400px;
+      object-fit: contain;
+      max-height: 623px;
     }
 
     .buttons {
@@ -133,13 +133,8 @@
     }
 
     @media screen and (max-width: 768px) {
-      margin-top: 64px;
       width: 90%;
       padding: 10px 10px;
-
-      img {
-        width: 100%;
-      }
 
       .buttons {
         .live-button {
@@ -153,6 +148,10 @@
       .readme {
         padding: 15px 10px;
       }
+    }
+
+    @media screen and (max-width: 340px) {
+      margin-top: 80px;
     }
   }
 }

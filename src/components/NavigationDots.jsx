@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 const NavigationDots = ({ active }) => (
   <div className="app__navigation">
-    {["home", "about", "skills", "work", "certificates", "contact"].map(
+    {["home", "about", "skills", "projects", "certificates", "contact"].map(
       (item, index) => (
         <a
           href={`#${item}`}

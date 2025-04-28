@@ -6,7 +6,7 @@ const SocialMedia = () => (
   <div className="app__social">
     <a
       className="app__social-item"
-      href="https://github.com/mtorresweb"
+      href="https://github.com/your github username"
       target="_blank"
       rel="noreferrer"
     >
@@ -14,13 +14,13 @@ const SocialMedia = () => (
     </a>
     <a
       className="app__social-item"
-      href="https://api.whatsapp.com/send?phone=573106058963"
+      href="https://api.whatsapp.com/send?phone=your phone number"
       target="_blank"
       rel="noreferrer"
     >
       <FaWhatsapp />
     </a>
-    <a className="app__social-item" href="mailto:hello@mtorresweb.me">
+    <a className="app__social-item" href="mailto:your email address">
       <AiOutlineMail />
     </a>
   </div>

@@ -7,32 +7,32 @@ const certificates = [
   {
     title: "API RESTful, Node.js",
     description: "From Udemy",
-    imgUrl: images.api,
-    pdf: "./api_certificate.pdf",
+    imgUrl: images.gold,
+    pdf: "./sample.pdf",
   },
   {
     title: "SCRUM",
     description: "From SENA",
-    imgUrl: images.scrum,
-    pdf: "./scrum.pdf",
+    imgUrl: images.gold,
+    pdf: "./sample.pdf",
   },
   {
     title: "Responsive Web Design",
     description: "From FreeCodeCamp",
-    imgUrl: images.freecodecamp,
-    pdf: "https://www.freecodecamp.org/certification/MichaelDev/responsive-web-design",
+    imgUrl: images.gold,
+    pdf: "./sample.pdf",
   },
   {
     title: "Git",
     description: "From códigofacilito",
-    imgUrl: images.gitpro,
-    pdf: "./git.pdf",
+    imgUrl: images.gold,
+    pdf: "./sample.pdf",
   },
   {
     title: "Linguaskill",
     description: "From Cambridge",
-    imgUrl: images.linguaskill,
-    pdf: "./linguaskill.pdf",
+    imgUrl: images.gold,
+    pdf: "./sample.pdf",
   },
 ];
 

@@ -13,34 +13,26 @@ import largeChat from "../assets/largeChat.png";
 import tasks from "../assets/tasks.png";
 import largeTasks from "../assets/largeTasks.png";
 import portfolio from "../assets/portfolio.png";
-import api from "../assets/api_img.jpg";
-import scrum from "../assets/scrum.png";
-import freecodecamp from "../assets/freecodecamp.png";
-import gitpro from "../assets/gitpro.png";
 import phone from "../assets/phone.png";
 import mongodb from "../assets/mongodb.png";
 import express from "../assets/Express.png";
 import ok from "../assets/ok.png";
-import linguaskill from "../assets/linguaskill.png";
 import largePortfolio from "../assets/largePortfolio.png";
 import social from "../assets/social.svg";
 import postgresql from "../assets/postgresql.jpg";
 import mysql from "../assets/mysql.jpg";
+import gold from "../assets/gold.png";
 
 export default {
   social,
   mysql,
   postgresql,
   largePortfolio,
-  linguaskill,
+  gold,
   ok,
   express,
   mongodb,
   phone,
-  gitpro,
-  freecodecamp,
-  scrum,
-  api,
   email,
   css,
   git,

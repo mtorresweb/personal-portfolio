@@ -64,13 +64,13 @@ function About() {
           </p>
         </div>
         <div className="links">
-          <a id="resume" href="./resume.pdf" target="_blank">
+          <a id="resume" href="./sample.pdf" target="_blank">
             Download CV
           </a>
           <div className="contact-links">
             <a
               className="app__social-item"
-              href="https://github.com/mtorresweb"
+              href="https://github.com/yourusername"
               target="_blank"
               rel="noreferrer"
             >
@@ -78,13 +78,13 @@ function About() {
             </a>
             <a
               className="app__social-item"
-              href="https://api.whatsapp.com/send?phone=573106058963"
+              href="https://api.whatsapp.com/send?phone=yourphonenumber"
               target="_blank"
               rel="noreferrer"
             >
               <FaWhatsapp />
             </a>
-            <a className="app__social-item" href="mailto:hello@mtorresweb.me">
+            <a className="app__social-item" href="mailto:youremailaddress">
               <AiOutlineMail />
             </a>
           </div>

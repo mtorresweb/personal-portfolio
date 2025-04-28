@@ -18,10 +18,10 @@ const Footer = () => {
   const copy = async (e) => {
     try {
       if (e.target.id == "tel-button") {
-        await navigator.clipboard.writeText("+57 3106058963");
+        await navigator.clipboard.writeText("your phone number");
         setCopiedTel(true);
       } else {
-        await navigator.clipboard.writeText("hello@mtorresweb.me");
+        await navigator.clipboard.writeText("your email address");
         setCopiedEmail(true);
       }
     } catch (err) {
@@ -34,10 +34,10 @@ const Footer = () => {
     setLoading(true);
     emailjs
       .sendForm(
-        "service_52ajuji",
-        "template_46w1iml",
+        "service",
+        "template",
         form.current,
-        "kZP4VIz7Irl_9IuP_"
+        "your_emailjs_user_id"
       )
       .then(
         () => {
@@ -68,8 +68,8 @@ const Footer = () => {
       >
         <div className="app__footer-card">
           <img src={images.email} alt="email" />
-          <a href="mailto:hello@mtorresweb.me" className="p-text">
-            hello@mtorresweb.me
+          <a href="mailto:your email address" className="p-text">
+            your email address
           </a>
           {copiedEmail ? (
             <motion.button
@@ -103,8 +103,8 @@ const Footer = () => {
         </div>
         <div className="app__footer-card">
           <img src={images.phone} alt="phone" />
-          <a href="tel:+57 3106058963" className="p-text">
-            +57 3106058963
+          <a href="tel:your phone number" className="p-text">
+            your phone number
           </a>
           {copiedTel ? (
             <motion.button

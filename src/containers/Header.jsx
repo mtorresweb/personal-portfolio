@@ -12,12 +12,13 @@ const Header = () => {
         className="app__header-info"
       >
         <div className="app__header-badge">
-          <div className="badge-cmp app__flex">
-            <span>👋</span>
+          <div className="badge-cmp ">
+            {/* <span>👋</span>
             <div style={{ marginLeft: 20 }}>
               <p className="p-text">Hello, I am</p>
-              <h1 className="head-text">Michael</h1>
-            </div>
+              <h1 className="head-text">Michael</h1></div> */}
+              <p className="p-text">⚠️ Esta es una plantilla de mi antiguo portafolio. Ya no representa mi identidad actual. Solo está disponible como ejemplo visual.</p>
+              <p className="p-text" style={{marginTop: '12px'}}>⚠️ This is a template of my old portfolio. It no longer represents my current identity. It is available for visual reference only.</p>
           </div>
 
           <div className="tag-cmp app__flex">
